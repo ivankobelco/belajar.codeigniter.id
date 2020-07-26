@@ -7,7 +7,6 @@
 	<b>Day #1 - 25-Jul-2020</b><br>
 	<?php echo $title . '-'.$sub_title; ?><hr>
 
-
 	<?php 
 		foreach ($emp_data->result() as $rows) {
 	?>

@@ -10,7 +10,7 @@ class Employee extends CI_Controller {
 
 	public function index()
 	{
-		$data['title']='Employee';
+		$data['title']='Employee Master';
 		$data['sub_title']='Day #1';
 		$this->load->view('hris/employee_v',$data);		
 	}
@@ -44,7 +44,7 @@ class Employee extends CI_Controller {
 
 		$this->db->where('emp_id', $emp_id);
 		$this->db->delete('tbl_employee');
-		
+
 		$this->employee_list();
 	}	
 

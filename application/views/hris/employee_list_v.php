@@ -4,8 +4,8 @@
 	<title><?php echo $title; ?></title>
 </head>
 <body>
-	<b>Day #1 - 25-Jul-2020</b><br>
-	<?php echo $title . '-'.$sub_title; ?><hr>
+	<b><?php echo $title; ?></b><br>
+	<?php echo $sub_title .' 25-Jul-2020'; ?><hr>
 
 	<table border="1">
 		<tr>
