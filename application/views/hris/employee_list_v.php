@@ -12,7 +12,7 @@
 			<th>No</th>
 			<th>EMP ID</th>
 			<th>EMP Name</th>
-			<th>Remark</th>
+			<th colspan="2">Action</th>
 		</tr>
 
 		<?php 
@@ -25,7 +25,9 @@
 			<td><?php echo $i;?></td>
 			<td><?php echo $rows->emp_id;?></td>
 			<td><?php echo $rows->emp_name;?></td>
-			<td></td>
+			<td><a href="<?php echo base_url('index.php/hris/employee/edit_master?emp_id=');?><?php echo $rows->emp_id;?>">Edit</a></td>
+			<td><a href="<?php echo base_url('index.php/hris/employee/delete_master?emp_id=');?><?php echo $rows->emp_id;?>">Delete</a></td>
+
 			<td></td>
 		</tr>
 
