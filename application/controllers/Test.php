@@ -9,6 +9,10 @@ class Test extends CI_Controller {
 		$data['sub_title']='Day #1';
 		$this->load->view('test_v',$data);
 	}
+	
+	function baru(){
+
+	}
 
 }
 
