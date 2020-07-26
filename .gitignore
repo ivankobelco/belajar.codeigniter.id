@@ -16,6 +16,15 @@ application/logs/*
 !application/logs/.htaccess
 /vendor/
 
-sftp-config.json
+
+# Sublime Text cache files
+config.json
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
 
 
