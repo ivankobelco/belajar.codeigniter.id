@@ -19,7 +19,7 @@ application/config/database.php
 
 
 # Sublime Text cache files
-config.json
+sftp-config.json
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
