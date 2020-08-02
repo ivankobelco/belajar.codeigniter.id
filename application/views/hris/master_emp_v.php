@@ -46,7 +46,7 @@
    </div>
    <div class="col-sm-3 col-md-3">
     <span class="btn btn-sm btn-primary waves-effect" onclick="add_emp()">
-      <img src="<?php echo base_url('/assets/vendor/bootstrap-4.5.0/icons/plus.svg');?>" alt="" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" title="plus">ADD</span>
+      <img src="<?php echo base_url('/assets/vendor/bootstrap-4.5.0/icons/person-plus.svg');?>" alt="" width="24" height="24" viewBox="0 0 20 20" fill="currentColor" title="plus" class="mr-1">ADD</span>
     </div>
   </div>
 
@@ -59,8 +59,8 @@
         <th scope="col" width="40">ID</th>
         <th scope="col" width="200">Full Name</th>
         <th scope="col" width="300">Address</th>
-        <th scope="col" width="20"></th>
-        <th scope="col" width="20"></th>
+        <th scope="col" width="40"></th>
+        <th scope="col" width="40"></th>
         <th scope="col"></th>
       </tr>
     </thead>

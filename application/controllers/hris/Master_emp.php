@@ -29,8 +29,8 @@ class Master_emp extends CI_Controller {
 			$row[] = $rows->emp_id;
 			$row[] = $rows->emp_name;
 			$row[] = $rows->address;
-			$row[] = '<span class="btn btn-sm btn-warning waves-effect" onclick="update_emp(\''.$i.'\',\''.$rows->emp_id.'\',\''.$rows->emp_name.'\')"><i class="fas fa-save"></i>EDIT</span>';
-			$row[] = '<span class="btn btn-sm btn-danger waves-effect" onclick="delete_emp(\''.$i.'\',\''.$rows->emp_id.'\',\''.$rows->emp_name.'\')"><i class="fas fa-save"></i>DEL</span>';
+			$row[] = '<span class="btn btn-sm btn-warning waves-effect" onclick="update_emp(\''.$i.'\',\''.$rows->emp_id.'\',\''.$rows->emp_name.'\')"><i class="glyphicon glyphicon-plus"></i>EDIT</span>';
+			$row[] = '<span class="btn btn-sm btn-danger waves-effect" onclick="delete_emp(\''.$i.'\',\''.$rows->emp_id.'\',\''.$rows->emp_name.'\')">DEL</span>';
 			$row[] = '';
 
 			$data[]=$row;
