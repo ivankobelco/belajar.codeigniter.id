@@ -3,9 +3,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Employee_m extends CI_Model {
 
-	public function save_master($data)
+	public function save_master($data,$emp_id)
 	{
-		$this->db->insert('tbl_employee',$data);
+		$this->db->where('emp_id', $emp_id);
+		$qry=$this->db->get('tbl_employee');
+
+		if($qry->num_rows() > 0){
+			$this->db->where('emp_id', $emp_id);
+			$this->db->update('tbl_employee',$data);
+		}else{
+			$this->db->insert('tbl_employee',$data);			
+		}
 	}
 
 	public function employee_list()

@@ -2,24 +2,27 @@
 
 	<form method="post" id="form_employee">
 	  <div class="form-group row">
-	    <label for="emp_id" class="col-sm-2 col-form-label">Emp ID</label>
-	    <div class="col-sm-10">
+	    <label for="emp_id" class="col-md-2 col-form-label">Emp ID</label>
+	    <div class="col-md-10">
 	      <input type="text" class="form-control" id="emp_id"  name="emp_id">
 	    </div>
 	  </div>
 
 	  <div class="form-group row">
-	    <label for="emp_name" class="col-sm-2 col-form-label">Emp. Name</label>
-	    <div class="col-sm-10">
+	    <label for="emp_name" class="col-md-2 col-form-label">Emp. Name</label>
+	    <div class="col-md-10">
 	      <input type="text" class="form-control" id="emp_name"  name="emp_name">
 	    </div>
 	  </div>
 
 
 	  <div class="form-group row">
-	    <div class="col-sm-10">
+	    <div class="col-md-5">
 	      <button type="submit" class="btn btn-primary">SAVE</button>
 	    </div>
+	    <div class="col-md-5">
+	      <span class="btn btn-warning" id="btn_cancel">CANCEL</span>
+	    </div>	    
 	  </div>
 	</form>
 </div>
