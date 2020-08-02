@@ -12,7 +12,9 @@ class Employee extends CI_Controller {
 	{
 		$data['title']='Employee Master';
 		$data['sub_title']='Day #1';
-		$this->load->view('hris/employee_v',$data);		
+		$data['page']='hris/employee_v';
+
+		$this->load->view('template',$data);		
 	}
 
 	public function save_master()

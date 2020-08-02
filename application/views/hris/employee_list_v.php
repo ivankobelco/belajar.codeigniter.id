@@ -17,7 +17,6 @@
 		</tr>
 
 		<?php 
-
 			$i=1;
 			foreach ($emp_list->result() as $rows) {
 		?>
