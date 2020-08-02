@@ -45,6 +45,11 @@ function add_emp() {
     });
 };
 
+function delete_emp(i, emp_id, emp_name) {
+    let isi = 'Maaf, fungsi delete employee : ' + emp_name + '\n Belum jadi ....!';
+    alert(isi);
+}
+
 $('#btn_cancel').click(function() {
     $('#emp_form').fadeOut(500, function() {
         $('#data_table').fadeIn(500, function() {

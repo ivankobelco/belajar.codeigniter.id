@@ -28,9 +28,9 @@ class Master_emp extends CI_Controller {
 			$row[] = '<img src="'.base_url("assets/images/employee/").$rows->photolink.'" height="50px">';
 			$row[] = $rows->emp_id;
 			$row[] = $rows->emp_name;
-			$row[] = '';
-
+			$row[] = $rows->address;
 			$row[] = '<span class="btn btn-sm btn-warning waves-effect" onclick="update_emp(\''.$i.'\',\''.$rows->emp_id.'\',\''.$rows->emp_name.'\')"><i class="fas fa-save"></i>EDIT</span>';
+			$row[] = '<span class="btn btn-sm btn-danger waves-effect" onclick="delete_emp(\''.$i.'\',\''.$rows->emp_id.'\',\''.$rows->emp_name.'\')"><i class="fas fa-save"></i>DEL</span>';
 			$row[] = '';
 
 			$data[]=$row;

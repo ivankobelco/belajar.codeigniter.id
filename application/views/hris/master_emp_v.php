@@ -16,6 +16,13 @@
     </div>
 
     <div class="form-group row">
+      <label for="address" class="col-md-2 col-form-label">Adress</label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" id="address"  name="address">
+      </div>
+    </div>    
+
+    <div class="form-group row">
       <div class="col-md-2">
         <span class="btn btn-primary" id="btn_save">SAVE</span>
       </div>
@@ -38,7 +45,8 @@
      <h2><?php echo $sub_title; ?></h2>
    </div>
    <div class="col-sm-3 col-md-3">
-    <span class="btn btn-sm btn-primary waves-effect" onclick="add_emp()"><i class="fas fa-save"></i>ADD</span>
+    <span class="btn btn-sm btn-primary waves-effect" onclick="add_emp()">
+      <img src="<?php echo base_url('/assets/vendor/bootstrap-4.5.0/icons/plus.svg');?>" alt="" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" title="plus">ADD</span>
     </div>
   </div>
 
@@ -49,9 +57,11 @@
         <th scope="col" width="20">No</th>
         <th scope="col" width="40">Img</th>
         <th scope="col" width="40">ID</th>
-        <th scope="col" width="120">Full Name</th>
-        <th scope="col" width="200">Address</th>
-        <th scope="col">ACT</th>
+        <th scope="col" width="200">Full Name</th>
+        <th scope="col" width="300">Address</th>
+        <th scope="col" width="20"></th>
+        <th scope="col" width="20"></th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
