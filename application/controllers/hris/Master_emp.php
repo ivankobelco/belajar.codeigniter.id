@@ -25,6 +25,7 @@ class Master_emp extends CI_Controller {
 
 			$row=[];
 			$row[] = $i;
+			$row[] = '<img src="'.base_url("assets/images/employee/").$rows->photolink.'" height="50px">';
 			$row[] = $rows->emp_id;
 			$row[] = $rows->emp_name;
 			$row[] = '';
@@ -43,7 +44,7 @@ class Master_emp extends CI_Controller {
 
 		$data=[
 			'emp_id'=>$this->input->post('emp_id'),
-			'emp_name'=>$this->input->post('emp_name')
+			'emp_name'=>ucwords(strtolower($this->input->post('emp_name')))
 		];
 
 		$this->employee_m->save_master($data,$emp_id);
